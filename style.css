@@ -5,18 +5,17 @@
     margin: 0;
 }
 
-body {
-    background-color: #2c2c2c;
-
-
-}
-
 section {
+    position: relative;
+    background-image: url(background.jpg);
+    background-size: cover;
+    background-position: center;
     display: flex;
     justify-content: space-between;
     height: 100vh;
     flex-direction: column;
-    padding: 20px 40px 0px 40px ;   
+    padding: 20px 40px 20px 40px ;
+    box-sizing: border-box;
 }
 
 .h1_wrapp {
@@ -24,9 +23,16 @@ section {
     align-self: center;
 }
 
-h1 {
+.h1_wrapp img{
+    width: 32px;
+    height: 32px;
+    margin-left: 10px;
+}
+
+.h1_wrapp h1 {
     font-family: "Anton", sans-serif;
     color: white;
+    font-weight: 400;
 }
 
 .tr_wrapp {
@@ -60,12 +66,11 @@ h1 {
 }
 .tr4 {
     width: 200px;
-    background-color: #fffb00;
 }
 
 .tr5 {
     width: 220px;
-    background-color: #fffb00;
+    border-bottom: 3px solid black;
 }
 
 .balance {
@@ -73,9 +78,26 @@ h1 {
     margin-top: 20px;
     font-size: 20px;
     font-family: "Anton", sans-serif;
+    font-weight: 600;
+    background-color: rgba(0, 0, 0, 0.5) ;
+    box-shadow: 0px 0px 20px black;
+    border-radius: 10px;
+}
+
+.balance span {
+    color: #FFD700;
+    font-weight: 400;
 }
 
 .footer_wrapp {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
     color: white;
     font-family: "Noto Sans", sans-serif;
+}
+
+.footer_wrapp h1 {
+    text-align: center;
+    margin-bottom: 10px;
 }
