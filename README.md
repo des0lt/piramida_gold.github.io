@@ -1,0 +1,1 @@
+# piramida_gold.github.io
