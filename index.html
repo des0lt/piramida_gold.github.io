@@ -10,19 +10,40 @@
     <section>
         <div class="h1_wrapp">
             <h1>Piramida Gold</h1>
+            <img src="logo.png" alt="">
         </div>
         <div class="tr_wrapp">
-            <div class="tr1 tr">5000G</div>
-            <div class="tr2 tr">4000G</div>
-            <div class="tr3 tr">3000G</div>
-            <div class="tr4 tr">2000G</div>
-            <div class="tr5 tr">1000G</div>
-            <div class="balance">Текущий баланс - 1450G</div>
+            <div id="tr1" class="tr1 tr">5000G</div>
+            <div id="tr2" class="tr2 tr">4000G</div>
+            <div id="tr3" class="tr3 tr">3000G</div>
+            <div id="tr4" class="tr4 tr">2000G</div>
+            <div id="tr5" class="tr5 tr">1000G</div>
+            <div class="balance">Текущий баланс - <span id="balance_int">1100</span><span>G</span></div>
         </div>
         <div class="footer_wrapp">
-            Piramida Gold. Как она работает? Пирамида это схема, при которой деньги новых участников используются для выплат старым участникам. Она строится на привлечении новых людей. Простыми словами - ты покупаешь у меня скин и через время получаешь больше за счет новых участников.
+            <h1>Как она работает?</h1>
+            <span>Piramida Gold.  Пирамида это схема, при которой деньги новых участников используются для выплат старым участникам. Она строится на привлечении новых людей. Простыми словами - ты покупаешь у меня скин и через время получаешь больше за счет новых участников.</span>
         </div>
 
     </section>
+
+    <script>
+        check = document.getElementById("balance_int").innerText;
+        if (check >= 1000) {
+            document.getElementById("tr5").style.backgroundColor = "#FFD700"
+        }
+        if(check >= 2000) {
+            document.getElementById("tr4").style.backgroundColor = "#FFD700"
+        }
+        if(check >= 3000) {
+            document.getElementById("tr3").style.backgroundColor = "#FFD700"
+        }
+        if(check >= 4000) {
+            document.getElementById("tr2").style.backgroundColor = "#FFD700"
+        }
+        if(check >= 5000) {
+            document.getElementById("tr1").style.backgroundColor = "#FFD700"
+        }
+    </script>
 </body>
 </html>
